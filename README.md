@@ -1,7 +1,7 @@
 
-## Fast-Charging of Electric Vehicles
+# Fast-Charging of Electric Vehicles
 
-** Rajesh Radhakrishnan (March 2025) **
+**Rajesh Radhakrishnan (March 2025)**
 
 ### Executive summary
 
@@ -141,4 +141,4 @@ Rajesh Radhakrishnan
 
 Email: rajeshradhakrishnan135@gmail.com
 
-[LinkedIn](linkedin.com/in/rajesh135)
+[LinkedIn](https://www.linkedin.com/in/rajesh135)
