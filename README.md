@@ -1,9 +1,9 @@
 
-### Fast-Charging of Electric Vehicles
+## Fast-Charging of Electric Vehicles
 
 ** Rajesh Radhakrishnan (March 2025) **
 
-#### Executive summary
+### Executive summary
 
 The **goal** of this project is to estimate the Energy used for fast-charging of Electric Vehicles using the 
 charging attributes as well as characteristics of the EV battery, namely the max requested power, change in the state of 
@@ -13,18 +13,18 @@ The **findings** from the regression analysis indicates that the Energy Wh has a
 Capacity, Max Power Requested  and the change in the State of Charge. The SVM model gave the best accuracy score in classification 
 of instances where the change in the state of charge is greater than 50%. 
 
-#### Rationale
+### Rationale
 
 The cost of electric vehicle charging is proportional to the energy consumed for the charging session. Based on the regression model 
 formulated in this project, the amount of energy consumed can be predicted based on the change in the state of charge and the 
 peak rate of charging. This prediction would serve as the basis for estimating the cost incurred for the Level-3 or fast-charging 
 session, which can then be provided to the user prior to charging.
 
-#### Research Question
+### Research Question
 
 What is the relationship between Energy used for charging (Wh) and the charging characteristics of the Electric Vehicle's Battery?
 
-** Background ** The growth of Electric Vehicles over the past decade has necessitated the development of EV charging infrastructure. 
+**Background** The growth of Electric Vehicles over the past decade has necessitated the development of EV charging infrastructure. 
 Charging stations come with the following types of chargers: (a) Level 1 chargers = standard outlets (120V) typically in homes that 
 provide slow charging overnight (b) Level 2 chargers = higher voltage (240V) and typically found in homes, workplaces and public areas, 
 usually takes a few hours to fully charge (c) Level 3 chargers = also known as DC Fast Chargers, these high-speed charging stations 
@@ -35,7 +35,7 @@ CCS (Combined Charging System) plug are a type of charging plug for EV fast char
 along with two additional DC pins, thus allowing for both AC and DC charging. CCS has become one of the most widely adopted fast-charging 
 standards in North America and Europe.
 
-#### Data Sources
+### Data Sources
 
 Dataset: https://github.com/DESL-EPFL/Level-3-EV-charging-dataset/blob/main/Session_data.xlsx
 
@@ -69,7 +69,7 @@ distribution of the Energy (Wh) values lies at 25,000 Wh and there are a few out
 of charge shows that most of the EVs arrive with SOC less than 50%. The scatter plot of SOC Change and charging minutes indicates a positive 
 correlation. CCS1 plug has a higher median Max Power requested than CCS2 plug.
 
-#### Methodology
+### Methodology
 
 The dataset was partitioned into a training set = 80% of the data (for model training) and a test set = 20%  of the data (for validation and 
 performance metrics). The primary tool for the analysis is Linear Regression without an intercept term (since Energy charged is zero if all 
@@ -82,7 +82,7 @@ Accuracy score is a suitable metric for the evaluation of these models since the
 change greater than 50% is 0.4004). It is the ratio of the total number of correct predictions to the total prediction count. Thus, Accuracy 
 Score = (True Positives + True Negatives) / Total
 
-#### Results
+### Results
 
 The **regression analysis** indicates that the Energy Wh has a positive relationship with the Energy Capacity, Max Power Requested 
 and the change in the State of Charge. The coefficients on the variables CCS1 and CCS2 (type of plug for charging) are also positive.
@@ -121,13 +121,13 @@ But the **SVM model** has the best accuracy among the four models and hence can 
 charging sessions where the Change in the State of Charge is expected to be more than 50 percent. These sessions provide the highest revenue to 
 the charging station and the ability to identify them based on the inputs can help the charging station better serve these customers.
 
-#### Next steps
+### Next steps
 
 The methodology from this analysis can be implemented at similar fast-charging stations in North America and Europe, to provide charging 
 cost information to the Electric Vehicle customers (and thus a better customer service). Special incentives and/or promotions can be offered to EV 
 customers identified as having a change in the state of charge over 50%, since they likely provide higher revenue to the station.
 
-#### Outline of project
+### Outline of project
 
 Link to the Jupyter Notebook = 
 https://github.com/rajeshradhakrishnan135/PCMLAI_Capstone_Project/blob/main/Fast_Charging_of_Electric_Vehicles.ipynb
@@ -135,7 +135,7 @@ https://github.com/rajeshradhakrishnan135/PCMLAI_Capstone_Project/blob/main/Fast
 Link to the Dataset = 
 https://github.com/DESL-EPFL/Level-3-EV-charging-dataset/blob/main/Session_data.xlsx
 
-##### Contact and Further Information
+#### Contact and Further Information
 
 Rajesh Radhakrishnan
 
