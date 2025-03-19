@@ -1,7 +1,8 @@
 
 # Fast-Charging of Electric Vehicles
 
-**Rajesh Radhakrishnan (March 2025)**
+**By Rajesh Radhakrishnan**
+
 
 ### Executive summary
 
@@ -24,7 +25,7 @@ session, which can then be provided to the user prior to charging.
 
 What is the relationship between Energy used for charging (Wh) and the charging characteristics of the Electric Vehicle's Battery?
 
-**Background** The growth of Electric Vehicles over the past decade has necessitated the development of EV charging infrastructure. 
+**Background:** The growth of Electric Vehicles over the past decade has necessitated the development of EV charging infrastructure. 
 Charging stations come with the following types of chargers: (a) Level 1 chargers = standard outlets (120V) typically in homes that 
 provide slow charging overnight (b) Level 2 chargers = higher voltage (240V) and typically found in homes, workplaces and public areas, 
 usually takes a few hours to fully charge (c) Level 3 chargers = also known as DC Fast Chargers, these high-speed charging stations 
@@ -60,8 +61,6 @@ The session dataset consists of 1878 EV charging sessions, and includes data in 
 14)	Energy Capacity = approx. capacity of EV’s battery (Wh)
 
 The change in the state of charge (Change in SOC) is computed by subtracting SOC arrival from SOC departure. 
-
-Description of the Dataset: https://github.com/DESL-EPFL/Level-3-EV-charging-dataset/
 
 **Exploratory Data Analysis (see jupyter notebook)**: The data was found to be clean with no null or missing values. The heat map depicting 
 the correlations among the fields shows that the Energy (Wh) has a 0.64 correlation with the Change in the State of Charge. The peak of the 
@@ -110,7 +109,7 @@ degree : [3,5]
 gamma : [0.01,0.1,1,'scale']
 probability': [True]
 
-The best SVM model was found to be: C = 1, degree = 3, gamma = 1, kernel = 'rbf', probability = True
+The best SVM model was found to be: C = 1, degree = 3, gamma = 1, kernel = 'rbf', probability = True, 
 And it was found that its Training accuracy (0.8249) was better than that of the base SVM case (0.8083) but the Test accuracy (0.7739) was poorer 
 than the base SVM case (0.7846).
 
@@ -134,6 +133,9 @@ https://github.com/rajeshradhakrishnan135/PCMLAI_Capstone_Project/blob/main/Fast
 
 Link to the Dataset = 
 https://github.com/DESL-EPFL/Level-3-EV-charging-dataset/blob/main/Session_data.xlsx
+
+Description of the Dataset = 
+https://github.com/DESL-EPFL/Level-3-EV-charging-dataset/
 
 #### Contact and Further Information
 
